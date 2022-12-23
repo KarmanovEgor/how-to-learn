@@ -6,23 +6,207 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  position: relative;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
+.header__logo_place {
+  position: absolute;
+  width: 228px;
+  height: 32px;
+  margin-top: 30px;
+  margin-left: 64px;
+}
+.header__tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 730px;
+  margin-left: 64px;
+  z-index: 3;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+}
+.header__subtitle {
+  position: absolute;
+  margin-left: 64px;
+  width: 388px;
+  bottom: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 4;
+}
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  margin-top: 64px;
 }
-
+/* блок description описание, в этом разделе все свойста, которые относятся только к этому блоку */
+.description {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.two-columns__span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+/* БЛОК Цифры и Факты*/
+.digits {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px auto 100px auto;
+}
+.section-title {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.section-subtitle {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.table {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  padding-top: 60px;
+  gap: 60px 0;
+}
+.table__cell {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.table__heading {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.table__text {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+/* Блок  Фейман */
+.feynman {
+  background-color: #f2f2f2;
+  position: relative;
+  height: 890px;
+  background-image: url("../images/feynman.png");
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.feynman__title {
+  padding-top: 100px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: 600;
+  width: 648px;
+  text-align: center;
+  margin: auto;
+}
+.feynman__subtitle {
+  padding-top: 70px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  text-align: center;
+  margin: auto;
+}
+.feynman__link {
+  position: absolute;
+  right: 0;
+  padding-right: 48px;
+  top: 50%;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+/* БЛОК КАУФМАН */
 /* и элемента с модификатором вида ключ-значение */
+.kaufman {
+  background-color: #1f1f1f;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 90px auto 90px auto;
+}
 .table__cell_theme_dark {
   width: 200px;
   color: white;
