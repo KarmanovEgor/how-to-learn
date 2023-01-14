@@ -1,0 +1,4 @@
+.link_click:hover {
+  transition: transform 2s;
+  opacity: 0.3;
+}
