@@ -4,7 +4,7 @@
 @import url(../page/header/_tittle/header__tittle.css);
 @import url(../page/header//_subtitle/header__subtitle.css);
 @import url(../page/header/_link/header__link.css);
-@import url(./header/_link/_click/link_click.css);
+@import url(./header/_link/_click/.css);
 @import url(../page/header/_square/rotation/rotation.css);
 @import url(../page/header/_square/header__square-pic.css);
 @import url(../page/header/_main_illustration/header__main-illustration.css);
@@ -66,5 +66,3 @@
 @import url(./footer/_columns/_column/_content/_column-link/footer__column-link.css);
 @import url(./footer/_columns/_column/_content/_column-links/footer__column-links.css);
 @import url(./footer/_columns/_column/_content/_social-icon/footer__social-icon.css);
-
-

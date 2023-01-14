@@ -6,3 +6,7 @@
   text-decoration: none;
   color: #2f80ed;
 }
+.khan__buy-link:hover {
+  transition: transform 2s;
+  opacity: 0.3;
+}
